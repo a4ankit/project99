@@ -13,9 +13,5 @@
     <echo>Deploy Code CheckOnly in Org with username: ${sf.username}</echo>
     <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="${user.dir}/src" logType="Detail" checkOnly="${sf.checkOnly}" />
   </target>
-	
-  <target name="deployCode">
-    <echo>Deploy code in Org with username: ${sf.username}</echo>
-    <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" logType="Detail" />
-  </target>
+
 </project>
