@@ -15,7 +15,7 @@
   </target>
 	
   <target name="deployCode">
-    <echo>Deploy and RunAllTests in Org with username: ${sf.username}</echo>
+    <echo>Deploy code in Org with username: ${sf.username}</echo>
     <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" logType="Detail" />
   </target>
 </project>
